@@ -26,10 +26,9 @@ const Reptile = (props) => {
      <div className="reptile">
         <h2>{reptile.name}</h2>
         <p>{reptile.morph}</p>
-        {
-        /// pick up with this hereDisplay the latest entry
+        
+        <p>PlaceHolder for most recent entry detials</p>
 
-        }
         <Link to={`/reptiles/${reptile.id}/logs`}><p>More Entries</p></Link>
         </div>
     )
