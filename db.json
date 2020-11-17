@@ -28,13 +28,19 @@
       "comments": "was grumpy"
     },
     {
-      "id": 1,
+      "id": 2,
       "reptileId": 1,
       "date": "2020-10-17",
       "comments": "came out for enrichment"
     },
     {
       "id": 3,
+      "reptileId": 1,
+      "date": "2020-10-07",
+      "comments": "ate a rat"
+    },
+    {
+      "id": 4,
       "reptileId": 2,
       "date": "2020-10-17",
       "comments": "ate an earthworm"

@@ -14,7 +14,7 @@ const Reptile = (props) => {
     setReptile(reptile);
         
         const getEntries = async () =>{
-            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs`);
+            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=asc`);
             const data = await response.json();
             return data;
     };
@@ -29,8 +29,10 @@ const Reptile = (props) => {
         
         <p>PlaceHolder for most recent entry detials</p>
 
-        <Link to={`/reptiles/${reptile.id}/logs`}><p>More Entries</p></Link>
+        <Link to={`/reptiles/${reptile.id}/logs?_sort=date&_order=asc`}><p>More Entries</p></Link>
+                <Link to ={'/'}> Main Page</Link>
         </div>
+
     )
 };
 

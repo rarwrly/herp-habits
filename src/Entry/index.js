@@ -14,7 +14,7 @@ const Entry = (props) => {
     setReptile(reptile);
         
         const getEntries = async () =>{
-            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs`);
+            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=asc`);
             const data = await response.json();
             return data;
     };
@@ -36,6 +36,7 @@ const Entry = (props) => {
                         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>
         </Link>
+    <Link to ={'/'}> Main Page</Link>
         </div>
     )
 };
