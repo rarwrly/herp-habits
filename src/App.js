@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "@reach/router";
+import "./App.css";
 
 function App() {
+  const [reptiles, setReptiles] = useState([]);
+
+  useEffect(async () => {
+    const getReptiles = async () => {
+      const response = await fetch("http://localhost:3000/reptiles");
+      const data = await response.json();
+      return data;
+    };
+      
+    const reptiles = await getReptiles();
+    setReptiles(reptiles);
+    
+
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {reptiles.map((reptile) => (
+        <Link to={`/reptiles/${reptile.id}`}><p>{reptile.name}</p></Link>
+      ))}
     </div>
   );
 }

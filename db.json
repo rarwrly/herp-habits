@@ -1,0 +1,43 @@
+{
+    "reptiles": [
+    {
+      "id": 1,
+      "name": "Gozer",
+      "hatchDate": "AUG-2014",
+        "adoptionDate":"2014-10-05",
+      "morph": "Cinnamon (Pewter recessive)",
+      "commonName": "Ball Python",
+      "imgUrl": ""
+    },
+    {
+      "id": 2,
+      "name": "Agador",
+      "hatchDate": "AUG-2019",
+        "adoptionDate":"2019-11-05",
+      "morph": "Normal",
+      "commonName": "Red Sided Garter",
+      "imgUrl": ""
+    }
+  ],
+    
+  "logs": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "date": "2020-10-15",
+      "comments": "was grumpy"
+    },
+    {
+      "id": 1,
+      "animalId": 1,
+      "date": "2020-10-17",
+      "comments": "came out for enrichment"
+    },
+    {
+      "id": 3,
+      "animalId": 2,
+      "date": "2020-10-17",
+      "comments": "came out for enrichment"
+    }
+  ]
+}

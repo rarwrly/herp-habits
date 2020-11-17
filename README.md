@@ -1,3 +1,15 @@
+# Order of Operations
+Run the JS DB first by navigating to the project folder and running 
+the json db needs to run on port 30000
+json-server --watch db.json
+
+navigate up a level to the project folder and run 
+
+npm start
+
+a message stating that port 3000 is already in use should be generated so follow the prompt to select another one
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
