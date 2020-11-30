@@ -1,9 +1,30 @@
 import React, { useState, useEffect } from "react";
+import {useForm} from "react-hook-form";
 import { Link } from "@reach/router";
 
 const Entry = (props) => {
   const [reptile, setReptile] = useState({});
   const [entries, setEntries] = useState([]);
+    
+    const { register, handleSubmit, reset} =useForm(); 
+    const onSubmit = async (formData) =>{
+        const response = await fetch(
+            `http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=desc`,
+            {
+                method: 'POST', 
+                body: JSON.stringify(formData),
+                headers:{
+                "Content-Type":"application/json",
+                },
+            }
+        );
+        
+        const createdLog= await response.json();
+        reset();
+        setEntries([...entries, createdLog]);
+    };
+    
+
     useEffect(async () => {
         const getReptile = async () => {
             const response = await fetch(`http://localhost:3000/reptiles/${props.reptileId}`);
@@ -14,7 +35,7 @@ const Entry = (props) => {
     setReptile(reptile);
         
         const getEntries = async () =>{
-            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=asc`);
+            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=desc`);
             const data = await response.json();
             return data;
     };
@@ -33,6 +54,13 @@ const Entry = (props) => {
             </div>
          );
         })}
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <lable>Date</lable>
+            <input name="date" type="date" ref={register}/>
+            <lable>Comments</lable>
+            <input name="comments" ref={register}/>
+            <input type="submit" />
+        </form>
                         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>
         </Link>

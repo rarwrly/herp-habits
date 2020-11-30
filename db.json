@@ -1,10 +1,10 @@
 {
-    "reptiles": [
+  "reptiles": [
     {
       "id": 1,
       "name": "Gozer",
       "hatchDate": "AUG-2014",
-        "adoptionDate":"2014-10-05",
+      "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
       "commonName": "Ball Python",
       "imgUrl": ""
@@ -13,13 +13,12 @@
       "id": 2,
       "name": "Agador",
       "hatchDate": "AUG-2019",
-        "adoptionDate":"2019-11-05",
+      "adoptionDate": "2019-11-05",
       "morph": "Normal",
       "commonName": "Red Sided Garter",
       "imgUrl": ""
     }
   ],
-    
   "logs": [
     {
       "id": 1,
@@ -44,6 +43,42 @@
       "reptileId": 2,
       "date": "2020-10-17",
       "comments": "ate an earthworm"
+    },
+    {
+      "date": "2020-11-29",
+      "comments": "Gumpy day",
+      "reptileId": "1",
+      "id": 5
+    },
+    {
+      "date": "2020-11-08",
+      "comments": "ate 1 rat and 1 mouse",
+      "reptileId": "1",
+      "id": 6
+    },
+    {
+      "date": "2020-11-30",
+      "comments": " Basked for 1hr midday",
+      "reptileId": "1",
+      "id": 7
+    },
+    {
+      "date": "2020-10-31",
+      "comments": "wore a cute hat",
+      "reptileId": "1",
+      "id": 8
+    },
+    {
+      "date": "2020-11-11",
+      "comments": "Watched TV",
+      "reptileId": "1",
+      "id": 9
+    },
+    {
+      "date": "2020-09-01",
+      "comments": "Pink belly and blue eyes",
+      "reptileId": "1",
+      "id": 10
     }
   ]
 }
