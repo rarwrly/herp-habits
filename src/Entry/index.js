@@ -6,7 +6,7 @@ const Entry = (props) => {
   const [reptile, setReptile] = useState({});
   const [entries, setEntries] = useState([]);
     
-    const { register, handleSubmit, reset} =useForm(); 
+    const { register, handleSubmit, reset, errors} =useForm(); 
     const onSubmit = async (formData) =>{
         const response = await fetch(
             `http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=desc`,
@@ -20,7 +20,7 @@ const Entry = (props) => {
         );
         
         const createdLog= await response.json();
-        reset();
+        reset();  
         setEntries([...entries, createdLog]);
     };
     
@@ -56,10 +56,12 @@ const Entry = (props) => {
         })}
         <form onSubmit={handleSubmit(onSubmit)}>
             <lable>Date</lable>
-            <input name="date" type="date" ref={register}/>
+            <input name="date" type="date" ref={register({ required:"You must enter a date"})}/>
+                {errors.date && errors.date.message}
             <lable>Comments</lable>
-            <input name="comments" ref={register}/>
-            <input type="submit" />
+            <input name="comments" ref={register({ required:"You must enter a comment"})}/>
+                {errors.comments && errors.comments.message}
+            <input type="submit" value="Submit Log Entry"/>
         </form>
                         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>

@@ -79,6 +79,12 @@
       "comments": "Pink belly and blue eyes",
       "reptileId": "1",
       "id": 10
+    },
+    {
+      "date": "2020-11-29",
+      "comments": "basked for 3 hrs in afternoon",
+      "reptileId": "2",
+      "id": 11
     }
   ]
 }
