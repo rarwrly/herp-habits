@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Gozer",
+        "emoji":"snake",
       "hatchDate": "AUG-2014",
       "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
