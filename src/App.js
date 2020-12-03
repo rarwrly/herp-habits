@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="App">
       {reptiles.map((reptile) => (
         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>

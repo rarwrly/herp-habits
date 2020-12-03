@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+    font-family: "consolas";
 }
 
+.reptile{
+  text-align: center;
+        font-family: "consolas";
+}
+
+.entries{
+  text-align: center;
+        font-family: "consolas";
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

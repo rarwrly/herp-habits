@@ -6,6 +6,7 @@ const Entry = (props) => {
   const [reptile, setReptile] = useState({});
   const [entries, setEntries] = useState([]);
     
+  const [selectedOption, setSelectedOption] = useState("no food offered"); 
     const { register, handleSubmit, reset, errors} =useForm(); 
     const onSubmit = async (formData) =>{
         const response = await fetch(
@@ -21,7 +22,7 @@ const Entry = (props) => {
         
         const createdLog= await response.json();
         reset();  
-        setEntries([...entries, createdLog]);
+        setEntries([createdLog, ...entries]);
     };
     
 
@@ -41,6 +42,8 @@ const Entry = (props) => {
     };
     const entries = await getEntries();
     setEntries(entries);
+    
+    getEntries();
   }, []);
     
     return(
@@ -58,9 +61,26 @@ const Entry = (props) => {
             <lable>Date</lable>
             <input name="date" type="date" ref={register({ required:"You must enter a date"})}/>
                 {errors.date && errors.date.message}
+
             <lable>Comments</lable>
             <input name="comments" ref={register({ required:"You must enter a comment"})}/>
                 {errors.comments && errors.comments.message}
+        <lable>Prey Items:</lable>
+        <input name="meal" value= {selectedOption}/>
+        <select
+          onChange={(event) => setSelectedOption(event.target.value)}
+          value={selectedOption}
+          defaultValue={selectedOption}
+          >
+          <option value="1 rat">1 rat</option>
+          <option value="1 rat, 1 mouse">1 rat, 1 mouse</option>
+          <option value="2 mice">2 mice</option>
+          <option value="refused prey item">refused prey item</option>
+          <option value="no food offered">no food offered</option>
+        </select>
+
+
+
             <input type="submit" value="Submit Log Entry"/>
         </form>
                         <Link to={`/reptiles/${reptile.id}`}>

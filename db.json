@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Gozer",
+      "emoji": "snake",
       "hatchDate": "AUG-2014",
       "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
@@ -85,6 +86,55 @@
       "comments": "basked for 3 hrs in afternoon",
       "reptileId": "2",
       "id": 11
+    },
+    {
+      "date": "2020-12-01",
+      "comments": "Looked cute might hiss later",
+      "reptileId": "1",
+      "id": 12
+    },
+    {
+      "date": "2020-12-02",
+      "comments": " stayed in hide",
+      "reptileId": "1",
+      "id": 13
+    },
+    {
+      "date": "2020-09-02",
+      "comments": "enrichment and meal",
+      "reptileId": "1",
+      "id": 14
+    },
+    {
+      "date": "2020-09-16",
+      "comments": "in shead",
+      "reptileId": "1",
+      "id": 15
+    },
+    {
+      "date": "2020-12-02",
+      "comments": "slept most of the day",
+      "reptileId": "1",
+      "id": 16
+    },
+    {
+      "date": "2020-12-02",
+      "comments": "good feeding response",
+      "reptileId": "1",
+      "id": 17
+    },
+    {
+      "date": "2020-12-02",
+      "comments": "consumed food",
+      "meal": "1 rat",
+      "reptileId": "1",
+      "id": 18
+    },
+    {
+      "date": "2020-12-02",
+      "comments": "meal consumed2",
+      "reptileId": "1",
+      "id": 19
     }
   ]
 }
