@@ -23,21 +23,27 @@
   "logs": [
     {
       "id": 1,
-      "animalId": 1,
+      "reptileId": 1,
       "date": "2020-10-15",
       "comments": "was grumpy"
     },
     {
-      "id": 1,
-      "animalId": 1,
+      "id": 2,
+      "reptileId": 1,
       "date": "2020-10-17",
       "comments": "came out for enrichment"
     },
     {
       "id": 3,
-      "animalId": 2,
+      "reptileId": 1,
+      "date": "2020-10-07",
+      "comments": "ate a rat"
+    },
+    {
+      "id": 4,
+      "reptileId": 2,
       "date": "2020-10-17",
-      "comments": "came out for enrichment"
+      "comments": "ate an earthworm"
     }
   ]
 }
