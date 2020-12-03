@@ -3,7 +3,6 @@ Run the JS DB first by navigating to the project folder and running
 the json db needs to run on port 30000
 json-server --watch db.json
 
-navigate up a level to the project folder and run 
 
 npm start
 

@@ -14,22 +14,25 @@ const Reptile = (props) => {
     setReptile(reptile);
         
         const getEntries = async () =>{
-            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=asc`);
+            const response = await  fetch(`http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=desc`);
             const data = await response.json();
             return data;
     };
     const entries = await getEntries();
     setEntries(entries);
   }, []);
-    
+
+
     return(
      <div className="reptile">
         <h2>{reptile.name}</h2>
         <p>{reptile.morph}</p>
-        
-        <p>PlaceHolder for most recent entry detials</p>
+        <div className="log">
+        <h2>Latest Log</h2>
 
-        <Link to={`/reptiles/${reptile.id}/logs?_sort=date&_order=asc`}><p>More Entries</p></Link>
+        </div>
+
+        <Link to={`/reptiles/${reptile.id}/logs?_sort=date&_order=desc`}><p>More Entries</p></Link>
                 <Link to ={'/'}> Main Page</Link>
         </div>
 
