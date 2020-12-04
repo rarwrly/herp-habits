@@ -10,10 +10,11 @@ const Entry = (props) => {
     const { register, handleSubmit, reset, errors} =useForm(); 
     const onSubmit = async (formData) =>{
         const response = await fetch(
-            `http://localhost:3000/reptiles/${props.reptileId}/logs?_sort=date&_order=desc`,
+            `http://localhost:3000/reptiles/${props.reptileId}/logs`,
             {
                 method: 'POST', 
                 body: JSON.stringify(formData),
+
                 headers:{
                 "Content-Type":"application/json",
                 },
@@ -66,13 +67,13 @@ const Entry = (props) => {
             <input name="comments" ref={register({ required:"You must enter a comment"})}/>
                 {errors.comments && errors.comments.message}
         <lable>Prey Items:</lable>
-        <input name="meal" value= {selectedOption}/>
+        
         <select
-          onChange={(event) => setSelectedOption(event.target.value)}
-          value={selectedOption}
-          defaultValue={selectedOption}
+            name="preyItems"
+          ref={register({required: "You must select an option"})}
+          defaultValue={"no food offered"}
           >
-          <option value="1 rat">1 rat</option>
+          <option value="1 rat">1 rat 🐀</option>
           <option value="1 rat, 1 mouse">1 rat, 1 mouse</option>
           <option value="2 mice">2 mice</option>
           <option value="refused prey item">refused prey item</option>
