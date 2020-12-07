@@ -21,6 +21,7 @@ const Entry = (props) => {
             }
         );
         
+        console.log(formData);
         const createdLog= await response.json();
         reset();  
         setEntries([createdLog, ...entries]);
@@ -55,34 +56,33 @@ const Entry = (props) => {
             <div className="entry">
                 <h2>{entry.date}</h2>
                 <p>{entry.comments}</p>
+                <p>{entry.preyItems}</p>
             </div>
          );
         })}
         <form onSubmit={handleSubmit(onSubmit)}>
-            <lable>Date</lable>
-            <input name="date" type="date" ref={register({ required:"You must enter a date"})}/>
-                {errors.date && errors.date.message}
-
-            <lable>Comments</lable>
-            <input name="comments" ref={register({ required:"You must enter a comment"})}/>
-                {errors.comments && errors.comments.message}
-        <lable>Prey Items:</lable>
-        
-        <select
-            name="preyItems"
-          ref={register({required: "You must select an option"})}
-          defaultValue={"no food offered"}
-          >
-          <option value="1 rat">1 rat 🐀</option>
-          <option value="1 rat, 1 mouse">1 rat, 1 mouse</option>
-          <option value="2 mice">2 mice</option>
-          <option value="refused prey item">refused prey item</option>
-          <option value="no food offered">no food offered</option>
-        </select>
-
-
-
-            <input type="submit" value="Submit Log Entry"/>
+           <ul class="formWrapper">
+                <li class="formItem"><lable>Date</lable>
+                    <input name="date" type="date" ref={register({ required:"You must enter a date"})}/>
+                    {errors.date && errors.date.message}
+                </li>
+                <li class="formItem"><lable>Comments</lable>
+                    <input name="comments" ref={register({ required:"You must enter a comment"})}/>
+                    {errors.comments && errors.comments.message}
+                </li>
+                <li class="formItem"><lable>Prey Items:</lable>
+                    <select name="preyItems"ref={register({required: "You must select an option"})}
+                    defaultValue={"no food offered"}>
+                        <option value="1 rat">1 rat </option>
+                        <option value="1 rat, 1 mouse">1 rat, 1 mouse</option>
+                        <option value="2 mice">2 mice</option>
+                        <option value="refused prey item">refused prey item</option>
+                        <option value="no food offered">no food offered</option>
+                    </select>
+                </li>
+                <li class="formItem"><input type="submit" value="Submit Log Entry"/>
+                </li>
+           </ul>  
         </form>
                         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>

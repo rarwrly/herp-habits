@@ -8,7 +8,7 @@
       "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
       "commonName": "Ball Python",
-      "imgUrl": ""
+      "imgUrl": "/gozer.jpg"
     },
     {
       "id": 2,
@@ -168,6 +168,27 @@
       "preyItems": "1 rat",
       "reptileId": "1",
       "id": 24
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "new test 06",
+      "preyItems": "1 rat",
+      "reptileId": "1",
+      "id": 25
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "test",
+      "preyItems": "1 rat",
+      "reptileId": "1",
+      "id": 26
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "new test for preyITems display",
+      "preyItems": "2 mice",
+      "reptileId": "1",
+      "id": 27
     }
   ]
 }
