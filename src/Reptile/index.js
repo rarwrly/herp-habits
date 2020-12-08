@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
+import LogEntry from "../LogEntry";
 
 const Reptile = (props) => {
   const [reptile, setReptile] = useState([]);
@@ -35,19 +36,16 @@ const Reptile = (props) => {
     return(
      <div className="reptile">
         <h2>{reptile.name}</h2>
-        <p>{reptile.morph}</p>
+        <div>{reptile.emoji}</div>
+        <p>Breed: {reptile.commonName}</p>
+        <p>Morph: {reptile.morph}</p>
       
-    <div>{reptile.name} is a: {reptile.emoji} </div>
+    
         <div className="log">
         <h2>Latest Logs</h2>
         {entries.map((entry)=>{
-          return(
-            <div className="entry">
-                <h2>{entry.date}</h2>
-                <p>{entry.comments}</p>
-            </div>
-         );
-        })}  
+            return <LogEntry date={entry.date} comments={entry.comments} preyItems={entry.preyItems}/>;
+            })}  
 
         </div>
         <Link to={`/reptiles/${reptile.id}/logs?_sort=date&_order=desc`}><p>More Entries</p></Link>
