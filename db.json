@@ -3,16 +3,17 @@
     {
       "id": 1,
       "name": "Gozer",
-      "emoji": "snake",
+      "emoji": "noodle 🐍",
       "hatchDate": "AUG-2014",
       "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
       "commonName": "Ball Python",
-      "imgUrl": ""
+      "imgUrl": "/gozer.jpg"
     },
     {
       "id": 2,
       "name": "Agador",
+      "emoji": "spicy noodle 🐍",
       "hatchDate": "AUG-2019",
       "adoptionDate": "2019-11-05",
       "morph": "Normal",
@@ -135,6 +136,59 @@
       "comments": "meal consumed2",
       "reptileId": "1",
       "id": 19
+    },
+    {
+      "date": "2020-12-03",
+      "comments": "herp derp",
+      "reptileId": "1",
+      "id": 20
+    },
+    {
+      "date": "2020-12-03",
+      "comments": "herp derp",
+      "reptileId": "1",
+      "id": 21
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "new test",
+      "reptileId": "1",
+      "id": 22
+    },
+    {
+      "date": "2020-09-04",
+      "comments": "in shead",
+      "preyItems": "no food offered",
+      "reptileId": "1",
+      "id": 23
+    },
+    {
+      "date": "2020-12-03",
+      "comments": "test for save with emoji",
+      "preyItems": "1 rat",
+      "reptileId": "1",
+      "id": 24
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "new test 06",
+      "preyItems": "1 rat",
+      "reptileId": "1",
+      "id": 25
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "test",
+      "preyItems": "1 rat",
+      "reptileId": "1",
+      "id": 26
+    },
+    {
+      "date": "2020-12-06",
+      "comments": "new test for preyITems display",
+      "preyItems": "2 mice",
+      "reptileId": "1",
+      "id": 27
     }
   ]
 }

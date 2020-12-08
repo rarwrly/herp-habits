@@ -30,11 +30,14 @@ const Reptile = (props) => {
     console.log(firstLog.comments)
     console.log(entries)
   }, []);
-  
+
+ 
     return(
      <div className="reptile">
         <h2>{reptile.name}</h2>
         <p>{reptile.morph}</p>
+      
+    <div>{reptile.name} is a: {reptile.emoji} </div>
         <div className="log">
         <h2>Latest Logs</h2>
         {entries.map((entry)=>{

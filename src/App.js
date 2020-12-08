@@ -22,8 +22,10 @@ function App() {
     <div className="App">
       {reptiles.map((reptile) => (
         <Link to={`/reptiles/${reptile.id}`}>
-        <p>{reptile.name}</p>
+        <h1>{reptile.name}</h1>
+        <img src={reptile.imgUrl} />
         </Link>
+
       ))}
     </div>
   );
