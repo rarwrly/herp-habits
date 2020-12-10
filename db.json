@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Gozer",
-      "emoji": "noodle 🐍",
+      "emoji": "🐍",
       "hatchDate": "AUG-2014",
       "adoptionDate": "2014-10-05",
       "morph": "Cinnamon (Pewter recessive)",
@@ -13,182 +13,84 @@
     {
       "id": 2,
       "name": "Agador",
-      "emoji": "spicy noodle 🐍",
+      "emoji": "🐍",
       "hatchDate": "AUG-2019",
       "adoptionDate": "2019-11-05",
-      "morph": "Normal",
-      "commonName": "Red Sided Garter",
-      "imgUrl": ""
+      "morph": "Coastal Phase",
+      "commonName": "Cali. King",
+      "imgUrl": "/agador.jpg"
     }
   ],
   "logs": [
     {
-      "id": 1,
-      "reptileId": 1,
-      "date": "2020-10-15",
-      "comments": "was grumpy"
-    },
-    {
-      "id": 2,
-      "reptileId": 1,
-      "date": "2020-10-17",
-      "comments": "came out for enrichment"
-    },
-    {
-      "id": 3,
-      "reptileId": 1,
-      "date": "2020-10-07",
-      "comments": "ate a rat"
-    },
-    {
       "id": 4,
       "reptileId": 2,
       "date": "2020-10-17",
-      "comments": "ate an earthworm"
+      "comments": "basked for 3 hrs",
+      "preyItems": "no food offered"
     },
     {
-      "date": "2020-11-29",
-      "comments": "Gumpy day",
+      "date": "2020-10-28",
+      "comments": "Participated in Halloween Photoshoot",
+      "preyItems": "no food offered",
       "reptileId": "1",
       "id": 5
     },
     {
-      "date": "2020-11-08",
-      "comments": "ate 1 rat and 1 mouse",
+      "date": "2020-11-02",
+      "comments": "Pink belly and blue eyes",
+      "preyItems": "no food offered",
       "reptileId": "1",
       "id": 6
     },
     {
-      "date": "2020-11-30",
-      "comments": " Basked for 1hr midday",
+      "date": "2020-11-06",
+      "comments": "in shed",
+      "preyItems": "no food offered",
       "reptileId": "1",
       "id": 7
     },
     {
-      "date": "2020-10-31",
-      "comments": "wore a cute hat",
+      "date": "2020-11-09",
+      "comments": "Offered post shed meal, he took it",
+      "preyItems": "1 rat",
       "reptileId": "1",
       "id": 8
     },
     {
-      "date": "2020-11-11",
-      "comments": "Watched TV",
-      "reptileId": "1",
+      "date": "2020-10-30",
+      "comments": "put up with photoshoot",
+      "preyItems": "no food offered",
+      "reptileId": "2",
       "id": 9
     },
     {
-      "date": "2020-09-01",
-      "comments": "Pink belly and blue eyes",
-      "reptileId": "1",
+      "date": "2020-11-01",
+      "comments": "offered meal",
+      "preyItems": "2 mice",
+      "reptileId": "2",
       "id": 10
     },
     {
-      "date": "2020-11-29",
-      "comments": "basked for 3 hrs in afternoon",
+      "date": "2020-11-01",
+      "comments": "offered meal",
+      "preyItems": "2 mice",
       "reptileId": "2",
       "id": 11
     },
     {
-      "date": "2020-12-01",
-      "comments": "Looked cute might hiss later",
+      "date": "2020-11-18",
+      "comments": "came out for enrichment, watched StarTrek Discovery",
+      "preyItems": "no food offered",
       "reptileId": "1",
       "id": 12
     },
     {
-      "date": "2020-12-02",
-      "comments": " stayed in hide",
-      "reptileId": "1",
-      "id": 13
-    },
-    {
-      "date": "2020-09-02",
-      "comments": "enrichment and meal",
-      "reptileId": "1",
-      "id": 14
-    },
-    {
-      "date": "2020-09-16",
-      "comments": "in shead",
-      "reptileId": "1",
-      "id": 15
-    },
-    {
-      "date": "2020-12-02",
-      "comments": "slept most of the day",
-      "reptileId": "1",
-      "id": 16
-    },
-    {
-      "date": "2020-12-02",
-      "comments": "good feeding response",
-      "reptileId": "1",
-      "id": 17
-    },
-    {
-      "date": "2020-12-02",
-      "comments": "consumed food",
-      "meal": "1 rat",
-      "reptileId": "1",
-      "id": 18
-    },
-    {
-      "date": "2020-12-02",
-      "comments": "meal consumed2",
-      "reptileId": "1",
-      "id": 19
-    },
-    {
-      "date": "2020-12-03",
-      "comments": "herp derp",
-      "reptileId": "1",
-      "id": 20
-    },
-    {
-      "date": "2020-12-03",
-      "comments": "herp derp",
-      "reptileId": "1",
-      "id": 21
-    },
-    {
-      "date": "2020-12-06",
-      "comments": "new test",
-      "reptileId": "1",
-      "id": 22
-    },
-    {
-      "date": "2020-09-04",
-      "comments": "in shead",
+      "date": "2020-12-07",
+      "comments": "Basked for 1hr midday",
       "preyItems": "no food offered",
       "reptileId": "1",
-      "id": 23
-    },
-    {
-      "date": "2020-12-03",
-      "comments": "test for save with emoji",
-      "preyItems": "1 rat",
-      "reptileId": "1",
-      "id": 24
-    },
-    {
-      "date": "2020-12-06",
-      "comments": "new test 06",
-      "preyItems": "1 rat",
-      "reptileId": "1",
-      "id": 25
-    },
-    {
-      "date": "2020-12-06",
-      "comments": "test",
-      "preyItems": "1 rat",
-      "reptileId": "1",
-      "id": 26
-    },
-    {
-      "date": "2020-12-06",
-      "comments": "new test for preyITems display",
-      "preyItems": "2 mice",
-      "reptileId": "1",
-      "id": 27
+      "id": 13
     }
   ]
 }

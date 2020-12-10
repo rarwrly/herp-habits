@@ -4,7 +4,7 @@ import { Router } from "@reach/router"
 import './index.css';
 import App from './App';
 import Reptile from './Reptile';
-import Entry from './Entry';
+import Entries from './Entries';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -13,7 +13,7 @@ ReactDOM.render(
     <Router>
     <App path="/" />
     <Reptile path ="/reptiles/:reptileId" />
-    <Entry path="/reptiles/:reptileId/logs" />
+    <Entries path="/reptiles/:reptileId/logs" />
 
     </Router>
   </React.StrictMode>,

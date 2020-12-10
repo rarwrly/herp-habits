@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {useForm} from "react-hook-form";
 import { Link } from "@reach/router";
+import LogEntry from "../LogEntry";
 
-const Entry = (props) => {
+const Entries = (props) => {
   const [reptile, setReptile] = useState({});
   const [entries, setEntries] = useState([]);
     
@@ -50,16 +51,10 @@ const Entry = (props) => {
     
     return(
      <div className="entries">
-        <p>Logs Page</p>
-                {entries.map((entry)=>{
-          return(
-            <div className="entry">
-                <h2>{entry.date}</h2>
-                <p>{entry.comments}</p>
-                <p>{entry.preyItems}</p>
-            </div>
-         );
-        })}
+        <h1>Logs Page</h1>
+            {entries.map((entry)=>{
+            return <LogEntry date={entry.date} comments={entry.comments} preyItems={entry.preyItems}/>;
+            })}
         <form onSubmit={handleSubmit(onSubmit)}>
            <ul class="formWrapper">
                 <li class="formItem"><lable>Date</lable>
@@ -92,4 +87,4 @@ const Entry = (props) => {
     )
 };
 
-export default Entry;
+export default Entries;
