@@ -77,6 +77,20 @@
       "preyItems": "2 mice",
       "reptileId": "2",
       "id": 11
+    },
+    {
+      "date": "2020-11-18",
+      "comments": "came out for enrichment, watched StarTrek Discovery",
+      "preyItems": "no food offered",
+      "reptileId": "1",
+      "id": 12
+    },
+    {
+      "date": "2020-12-07",
+      "comments": "Basked for 1hr midday",
+      "preyItems": "no food offered",
+      "reptileId": "1",
+      "id": 13
     }
   ]
 }

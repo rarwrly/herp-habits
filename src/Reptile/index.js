@@ -34,7 +34,7 @@ const Reptile = (props) => {
 
  
     return(
-     <div className="reptile">
+     <div className="Reptile">
         <h2>{reptile.name}</h2>
         <div>{reptile.emoji}</div>
         <p>Breed: {reptile.commonName}</p>

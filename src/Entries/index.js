@@ -51,7 +51,7 @@ const Entries = (props) => {
     
     return(
      <div className="entries">
-        <p>Logs Page</p>
+        <h1>Logs Page</h1>
             {entries.map((entry)=>{
             return <LogEntry date={entry.date} comments={entry.comments} preyItems={entry.preyItems}/>;
             })}
