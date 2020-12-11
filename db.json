@@ -126,6 +126,27 @@
       "preyItems": "2 mice",
       "reptileId": "undefined",
       "id": 18
+    },
+    {
+      "date": "2020-12-10",
+      "comments": "herpderp3",
+      "preyItems": "2 mice",
+      "reptileId": "1",
+      "id": 19
+    },
+    {
+      "date": "2020-12-09",
+      "comments": "Looked cute might hiss later",
+      "preyItems": "no food offered",
+      "reptileId": "2",
+      "id": 20
+    },
+    {
+      "date": "2020-12-10",
+      "comments": "watched the latest episode of ST: Discovery",
+      "preyItems": "no food offered",
+      "reptileId": "1",
+      "id": 21
     }
   ]
 }
