@@ -32,7 +32,7 @@ const Entries = (props) => {
             {entries.map((entry)=>{
             return <LogEntry date={entry.date} comments={entry.comments} preyItems={entry.preyItems}/>;
             })}
-            <Form setEntries={setEntries} entries={entries}  />
+            <Form setEntries={setEntries} entries={entries} reptileId={reptile.id} />
                         <Link to={`/reptiles/${reptile.id}`}>
         <p>{reptile.name}</p>
         </Link>

@@ -10,7 +10,7 @@ const Form = (props) => {
           `http://localhost:3000/reptiles/${props.reptileId}/logs`,
           {
               method: 'POST', 
-              body: JSON.stringify(formData),
+              body: JSON.stringify({...formData, reptileId: props.reptileId}),
 
               headers:{
               "Content-Type":"application/json",
