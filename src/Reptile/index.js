@@ -25,11 +25,6 @@ const Reptile = (props) => {
     getReptile();
     getEntries();
     
-    const firstLog= entries[0];
-    console.log(firstLog)
-    console.log(firstLog.date)
-    console.log(firstLog.comments)
-    console.log(entries)
   }, []);
 
  

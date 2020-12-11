@@ -18,7 +18,6 @@ const Form = (props) => {
           }
       );
       
-      console.log(formData);
       const createdLog= await response.json();
       reset();  
       props.setEntries([createdLog, ...props.entries]);
